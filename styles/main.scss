@@ -1,0 +1,346 @@
+@import 'setup';
+
+@font-face {
+  font-family: 'Calibri';
+  src: url('fonts/Calibri.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'spinwerad';
+  src: url('fonts/spinwerad/spinwerad.ttf') format('opentype');
+}
+
+
+html {
+	font-size: 62.5%; 
+}
+
+body {
+	margin: 0 auto;
+	background: black;
+	background: url('../images/backgroundme.jpg') fixed center;
+	background-size: cover;
+	
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1280px;
+	
+	margin-left: auto;
+	margin-right: auto;
+	 
+
+}
+
+header  {
+	width: calc(100% - 7%);
+	height: 800px;
+	float: right;
+}
+
+nav {
+	position: fixed;
+	max-width: 7%;
+	min-width: 7%;
+	height: 100vh;
+	background-color: rgba(111, 77, 38, 0.6);
+	text-align: center;
+	left: 0;
+	top: 0;
+	
+	
+	
+	
+}
+
+nav ul{
+	list-style-type: none;
+	padding-left: 0px;
+	padding-top: 40px;
+
+	
+}
+ul li {
+	width: 100%;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+ul li a{
+	color: #fff;
+}
+
+ul li a:hover{
+	color: #f9C96C; 
+}
+
+header h1 {
+	width: 50%;
+	text-align: center;
+	font-family: 'spinwerad', Fallback, serif;
+	color: #F9C96C;
+	font-style: italic;
+	font-size: 8rem;
+	margin: auto;
+	letter-spacing: 5px;
+
+
+	text-transform: uppercase;
+	margin: auto;
+}
+
+.logo {
+	display: block;
+	margin: 20% auto 8%;
+	
+	
+}
+
+.arrow {
+	background: url(images/arrow.png);
+	display: block;
+	height: 23px;
+	width: 39px;
+	margin: 50px auto 0 auto;
+}
+
+.arrow:hover {
+	background: url(images/arrowhover.png);
+	height: 23px;	
+	width: 39px;
+}
+
+.aboutme {
+	width: calc(100% - 7%);
+	background: #2A2A2A;
+	padding: 50px;
+	float: right;
+	-webkit-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px -2px 4px 0px rgba(0,0,0,0.35);
+	img {
+		display: block;
+		height: auto; 
+	    width: auto; 
+	    max-width: 250px; 
+	    max-height: 250px;
+		border-radius: 50%;
+		margin: auto;
+	}
+}
+
+
+
+.aboutme h1 {
+	font-family: 'spinwerad', Fallback, serif;
+	color: #fff;
+	font-size: 5rem;
+	text-align: center;
+	margin: 5% auto 1%;
+	text-transform: capitalize;
+}
+
+ .aboutme p {
+ 	width: 80%;
+	color: #fff;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	margin: 0 auto 10px;
+	text-align: center;
+	
+}
+.about-meunderline {
+	width: 30px;
+	border-bottom: 1px solid #f9C96C ;
+	margin: 0 auto 5%;
+}
+
+/*s<section skills*/
+.software {
+	width: calc(100% - 7%);
+	background: #4C4C4C;
+	float: right;
+	.wrapper {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	 	align-items: center;
+	}
+	
+	
+}
+
+
+
+.software .devicon-html5-plain, 
+.devicon-css3-plain, 
+.devicon-sass-original,
+.devicon-javascript-plain, 
+.devicon-illustrator-plain, 
+.devicon-photoshop-plain 
+{
+	font-size: 5rem;
+	color: #fff;
+	text-align: center;
+	float: left;
+	margin: 3%;
+
+}
+
+.devicons-sublime {
+	font-size: 7.6rem;
+	color: #fff;
+	text-align: center;
+	float: left;
+	margin: 1.5% 3% 4% 3%;
+}
+
+.work {
+	width: calc(100% - 7%);
+	float: right;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.webwork, .designwork {
+	padding: 5% 0 0 5%;
+	
+	
+}
+
+
+.webwork-Tittlen-line {
+	text-align: left;
+	
+	
+}
+
+.webwork-Tittlen-line p {
+	font-family: 'spinwerad', Fallback, serif;
+	color: #fff;
+	font-size: 2.5rem;
+	margin-bottom: 5px;
+}
+.webwork-underline {
+	width: 30px;
+	border-bottom: 1px solid #f9C96C ;
+	
+
+}
+.webwork img {
+	width: auto;
+	height: auto;
+	max-width: 80%; 
+    max-height: auto;
+    min-width: 50%;
+    min-height: auto;
+    float: left;
+
+}
+.designwork img {
+	width: auto;
+	height: auto;
+	max-width: 80%; 
+    max-height: auto;
+    min-height: auto;
+    float: left;
+
+
+}
+
+.rightside-Webwork  {
+	width: 20%;
+	float: left;
+	padding: 3% 2% 0 0;
+}
+
+.webwork-divider, .designwork-devider {
+	height: 250px;
+	border-left: 1px solid #f9C96C ;
+	margin-right: 8px;
+	float: left;
+}
+.rightside-Webwork h1 {
+	width: 100%;
+	font-family: 'spinwerad', Fallback, serif;
+	font-size: 3rem;
+	color: #fff;
+	text-align: left;
+	
+}
+.rightside-Webwork a {
+	color: #fff;
+	font-size: 1.4rem;
+	text-decoration: none;
+}
+
+.rightside-Webwork a:hover {
+	color: #f9C96C;
+}
+
+.designwork-Tittlen-line {
+	text-align: left;
+	
+
+}
+
+.designwork-Tittlen-line p{
+	font-family: 'spinwerad', Fallback, serif;
+	color: #fff;
+	font-size: 2.5rem;
+	margin-bottom: 5px;
+}
+.designwork-underline {
+	width: 30px;
+	border-bottom: 1px solid #f9C96C ;
+	margin: 0;
+}
+.rightside-design-qv {
+	width: 20%;
+	float: left;
+	padding: 3% 2% 0 0;
+}
+.rightside-design-qv img {
+	
+	max-height: 1%;
+	margin-left: 10%;
+}
+.rightside-design-qv h1{
+	width: 100%;
+	font-family: 'spinwerad', Fallback, serif;
+	font-size: 3rem;
+	color: #fff;
+	
+	font-weight: thin;
+	letter-spacing: 1px;
+}
+
+footer {
+	width: calc(100% - 7%);
+	background-color: #000;
+	float: right;
+}
+
+footer {
+	h1, p{
+	font-family: 'Calibri', Fallback, sans-serif;
+	color: #fff;
+}
+	h1 {
+		font-size: 2rem;
+		display: block;
+		text-align: center;
+	}
+	p {
+		font-size: 1.4rem;
+		font-weight: thin;
+		letter-spacing: 1px;
+		text-align: center;
+	}
+}
+
